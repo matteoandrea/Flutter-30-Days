@@ -19,5 +19,11 @@
             "request": "launch",
             "type": "dart"
         },
+        {
+            "name": "day_4",
+            "cwd": "day_4",
+            "request": "launch",
+            "type": "dart"
+        },
     ]
 }
