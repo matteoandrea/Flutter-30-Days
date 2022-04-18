@@ -8,45 +8,16 @@
             "type": "dart"
         },
         {
-            "name": "day_1 (profile mode)",
-            "cwd": "day_1",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "day_1 (release mode)",
-            "cwd": "day_1",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "Flutter",
-            "program": "lib/main.dart",
-            "cwd": "day_1",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
             "name": "day_2",
             "cwd": "day_2",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "day_2 (profile mode)",
-            "cwd": "day_2",
+            "name": "day_3",
+            "cwd": "day_3",
             "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "day_2 (release mode)",
-            "cwd": "day_2",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
+            "type": "dart"
         },
     ]
 }
