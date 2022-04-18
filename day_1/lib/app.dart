@@ -39,21 +39,21 @@ class _AppState extends State<App> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("What Do You Want To Eat?"),
+              const Text("What Do You Want To Eat?"),
               if (_currentRestaurant != -1)
                 Text(restaurants[_currentRestaurant],
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.center),
               Padding(
-                padding: EdgeInsets.only(top: 50),
+                padding: const EdgeInsets.only(top: 50),
                 child: TextButton(
                   onPressed: () {
                     updateIndex();
                   },
-                  child: Text("Pick Restaurant"),
+                  child: const Text("Pick Restaurant"),
                   style: TextButton.styleFrom(
                     primary: Colors.white,
                     backgroundColor: Colors.purple,
