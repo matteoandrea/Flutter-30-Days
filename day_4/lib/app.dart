@@ -11,7 +11,7 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  List<Quizz> _quizz = [
+  final List<Quizz> _quizz = [
     Quizz(question: "aaaaaaa", answer: "bbbbbb"),
     Quizz(question: "cccccccccccccc", answer: "dddddddddd"),
     Quizz(question: "eeeeeee", answer: "ffffffffff"),
@@ -41,14 +41,14 @@ class _AppState extends State<App> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   OutlinedButton.icon(
-                    onPressed: PrevCard,
-                    icon: Icon(Icons.chevron_left),
-                    label: Text("Prev"),
+                    onPressed: prevCard,
+                    icon: const Icon(Icons.chevron_left),
+                    label: const Text("Prev"),
                   ),
                   OutlinedButton.icon(
-                    onPressed: NexCard,
-                    icon: Icon(Icons.chevron_right),
-                    label: Text("Next"),
+                    onPressed: nexCard,
+                    icon: const Icon(Icons.chevron_right),
+                    label: const Text("Next"),
                   ),
                 ],
               ),
@@ -59,14 +59,14 @@ class _AppState extends State<App> {
     );
   }
 
-  void NexCard() {
+  void nexCard() {
     setState(() {
       _currentQuest = _currentQuest + 1 < _quizz.length ? _currentQuest + 1 : 0;
-      print(_currentQuest);
+      // print(_currentQuest);
     });
   }
 
-  void PrevCard() {
+  void prevCard() {
     setState(() {
       _currentQuest =
           _currentQuest - 1 >= 0 ? _currentQuest - 1 : _quizz.length - 1;

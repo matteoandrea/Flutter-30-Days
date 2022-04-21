@@ -24,10 +24,10 @@ class _AppState extends State<App> {
             children: [
               if (tip != "")
                 Padding(
-                  padding: EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(20),
                   child: Text(
                     tip,
-                    style: TextStyle(fontSize: 30),
+                    style: const TextStyle(fontSize: 30),
                   ),
                 ),
               const Text("Total Amount"),
@@ -44,7 +44,7 @@ class _AppState extends State<App> {
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: ToggleButtons(
-                    children: [Text("10%"), Text("15%"), Text("20%")],
+                    children: const [Text("10%"), Text("15%"), Text("20%")],
                     isSelected: _selection,
                     onPressed: updateSelection),
               ),
