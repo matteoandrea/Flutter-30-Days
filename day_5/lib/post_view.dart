@@ -1,3 +1,4 @@
+import 'package:day_5/nav_bloc.dart';
 import 'package:day_5/posts_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,7 +26,11 @@ class PostView extends StatelessWidget {
                 itemCount: state.posts.length,
                 itemBuilder: ((context, index) {
                   return Card(
-                    child: ListTile(title: Text(state.posts[index].title)),
+                    child: ListTile(
+                      title: Text(state.posts[index].title),
+                      onTap: () => BlocProvider.of<NavCubit>(context)
+                          .showPostDetail(state.posts[index]),
+                    ),
                   );
                 }),
               ),
